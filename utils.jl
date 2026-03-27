@@ -14,3 +14,15 @@ function lx_baz(com, _)
   # do whatever you want here
   return uppercase(brace_content)
 end
+
+function lx_extlink(com, _)
+  # Extract the two brace contents safely
+  braces = com.braces
+  if length(braces) < 2
+    return "<!-- Error: extlink requires two arguments -->"
+  end
+  # Strip the surrounding braces
+  text = strip(Franklin.content(braces[1]), ['{', '}'])
+  url = strip(Franklin.content(braces[2]), ['{', '}'])
+  return """~~~<a href="$url" target="_blank" rel="noopener" class="text-decoration-none text-muted d-inline-flex align-items-center gap-1">$text <img src="/assets/icons/external-link.svg" width="12" height="12" alt="External Link"></a>~~~"""
+end
