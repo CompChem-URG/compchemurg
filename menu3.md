@@ -1,5 +1,5 @@
 +++
-title = "Menu 3"
+title = "Posts"
 +++
 
 # Working with tags

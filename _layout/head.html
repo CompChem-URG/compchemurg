@@ -3,15 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {{if hasmath}} {{insert head_katex.html }}   {{end}}
+  {{if hasmath}} {{insert head_katex.html }}     {{end}}
   {{if hascode}} {{insert head_highlight.html }}   {{end}}
+  {{ insert head_mixin.html }}
 
-  {{insert style.html}}
-
-  <title>Franklin Example | Vela</title>
+  {{isdef title}} <title>{{fill title}}</title>  {{end}}
 </head>
 <body>
-{{insert nav.html}}
-
+  {{insert header.html}}
 
 <!-- Content appended here -->
