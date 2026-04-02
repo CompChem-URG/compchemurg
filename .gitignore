@@ -1,0 +1,23 @@
+# Franklin generated files
+__site/
+
+# Generated HTML files (Franklin builds these from .md)
+*.html
+!_layout/*.html
+!_libs/**/*.html
+
+# Julia
+*.jl.*.cov
+*.jl.cov
+*.jl.mem
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
