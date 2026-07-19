@@ -1,0 +1,25 @@
+/**
+ * _events.scss
+ * Styles for the events page
+ */
+
+.event-meta {
+  margin-top: -0.25rem;
+  margin-bottom: 0.5rem;
+  color: $post-date-color;
+  font-size: 0.9rem;
+}
+
+.event-poster {
+  margin-bottom: 0.75rem;
+  text-align: center;
+
+  a {
+    display: inline-block;
+  }
+
+  img {
+    max-width: 260px;
+    margin: 0;
+  }
+}
