@@ -4,19 +4,44 @@
   */
 
 .nav-main {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
   font-size: $font-size; // override mobile media query
-  text-align: center;
-  margin-bottom: 4rem;
+  max-width: 38rem;
+  margin: 0 auto 4rem;
+  padding: 1.6rem 1.5rem 1rem;
 
   @media (max-width: 38em) {
+    justify-content: center;
+    text-align: center;
     margin-bottom: 2rem;
+    padding: 1rem 1.5rem 0.75rem;
+  }
+
+  .brand {
+    font-size: 1.3em;
+    font-weight: bold;
+    letter-spacing: 0.01em;
+    color: $nav-brand-color;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      opacity: 0.8;
+    }
   }
 
   ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 0;
-    border-bottom-color: $nav-bottom-border-color;
-    border-bottom-width: $nav-bottom-border-width;
-    border-bottom-style: solid;
+    margin: 0;
+    list-style: none;
   }
 
   li {
@@ -28,17 +53,5 @@
       text-decoration: none;
       padding: $nav-link-padding-y $nav-link-padding-x;
     }
-  }
-
-  li.logo a {
-    color: $nav-icon-color;
-    background: $nav-icon-background-color;
-    font-weight: bold;
-    width: 1.6em;
-    height: 1.6em;
-    border-radius: 50px;
-    line-height: 1.6em;
-    margin: 0 1rem;
-    padding: 0;
   }
 }

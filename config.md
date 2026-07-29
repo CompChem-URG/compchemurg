@@ -3,8 +3,8 @@ Add here global page variables to use throughout your website.
 -->
 +++
 title = "CompChemURG"
-description = "Computational chemistry website"
-author = "Leticia Madureira"
+description = "Community for underrepresented groups in computational chemistry"
+authors = "Leticia Madureira, William Glass"
 prepath = "compchemurg/"
 website_url   = "https://compchemurg.github.io/compchemurg/"
 +++
